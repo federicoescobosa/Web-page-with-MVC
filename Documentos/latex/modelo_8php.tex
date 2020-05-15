@@ -1,0 +1,213 @@
+\doxysection{Referencia del Archivo C\+:/xampp/htdocs/\+Tarea\+\_\+\+Global\+\_\+\+D\+W\+E\+S/modelo/modelo.php}
+\label{modelo_8php}\index{C:/xampp/htdocs/Tarea\_Global\_DWES/modelo/modelo.php@{C:/xampp/htdocs/Tarea\_Global\_DWES/modelo/modelo.php}}
+\doxysubsection*{Funciones}
+\begin{DoxyCompactItemize}
+\item 
+\textbf{ cargar\+Libros} ()
+\item 
+\textbf{ cargar\+Autores} ()
+\item 
+\textbf{ existe\+Usuario} (\$usuario)
+\item 
+\textbf{ comprueba\+Usuario} (\$usuario, \$contrasena)
+\item 
+\textbf{ cargar\+Usuario} ()
+\item 
+\textbf{ cargar\+Rol} (\$usuario)
+\item 
+\textbf{ set\+\_\+libro} (\$datos\+\_\+libro)
+\item 
+\textbf{ set\+\_\+autor} (\$datos\+\_\+autor)
+\item 
+\textbf{ registrar\+\_\+\+Usuario} (\$datos\+\_\+usuario)
+\item 
+\textbf{ borrar\+\_\+usuario} (\$id)
+\item 
+\textbf{ borrar\+\_\+libro} (\$id)
+\item 
+\textbf{ borrar\+\_\+autor} (\$id)
+\item 
+\textbf{ update\+\_\+user} (\$lista\+\_\+modificada)
+\item 
+\textbf{ update\+\_\+libro} (\$lista\+\_\+modificada)
+\item 
+\textbf{ update\+\_\+autor} (\$lista\+\_\+modificada)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Documentación de las funciones}
+\mbox{\label{modelo_8php_a399a1fac87ceb994d4368443ab6dff3f}} 
+\index{modelo.php@{modelo.php}!borrar\_autor@{borrar\_autor}}
+\index{borrar\_autor@{borrar\_autor}!modelo.php@{modelo.php}}
+\doxysubsubsection{borrar\_autor()}
+{\footnotesize\ttfamily borrar\+\_\+autor (\begin{DoxyParamCaption}\item[{}]{\$id }\end{DoxyParamCaption})}
+
+Borra un autor por su id 
+\begin{DoxyParams}[1]{Parámetros}
+Integer & {\em \$id} & parámetro diferenciador \\
+\hline
+\end{DoxyParams}
+\mbox{\label{modelo_8php_a270b924a7f97d6213b114f46c9447e1d}} 
+\index{modelo.php@{modelo.php}!borrar\_libro@{borrar\_libro}}
+\index{borrar\_libro@{borrar\_libro}!modelo.php@{modelo.php}}
+\doxysubsubsection{borrar\_libro()}
+{\footnotesize\ttfamily borrar\+\_\+libro (\begin{DoxyParamCaption}\item[{}]{\$id }\end{DoxyParamCaption})}
+
+Borra un libro por su id 
+\begin{DoxyParams}[1]{Parámetros}
+Integer & {\em \$id} & parámetro diferenciador. \\
+\hline
+\end{DoxyParams}
+\mbox{\label{modelo_8php_af7c6a3898c2f38fb4df4d70cb1fa78d3}} 
+\index{modelo.php@{modelo.php}!borrar\_usuario@{borrar\_usuario}}
+\index{borrar\_usuario@{borrar\_usuario}!modelo.php@{modelo.php}}
+\doxysubsubsection{borrar\_usuario()}
+{\footnotesize\ttfamily borrar\+\_\+usuario (\begin{DoxyParamCaption}\item[{}]{\$id }\end{DoxyParamCaption})}
+
+Borra un usuario diferenciado por su id 
+\begin{DoxyParams}[1]{Parámetros}
+Integer & {\em \$id} & parámetro diferenciador \\
+\hline
+\end{DoxyParams}
+\mbox{\label{modelo_8php_ab4bcdeaf8472eb0f61f2de9593d5fc30}} 
+\index{modelo.php@{modelo.php}!cargarAutores@{cargarAutores}}
+\index{cargarAutores@{cargarAutores}!modelo.php@{modelo.php}}
+\doxysubsubsection{cargarAutores()}
+{\footnotesize\ttfamily cargar\+Autores (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Devuelve una lista con toda la información de los autores. \begin{DoxyAuthor}{Autor}
+Federico Escobosa Osa. 
+\end{DoxyAuthor}
+\begin{DoxyReturn}{Devuelve}
+array \$lista\+Autores; 
+\end{DoxyReturn}
+\mbox{\label{modelo_8php_ae609292fa07f4c01d493d7e3b7312743}} 
+\index{modelo.php@{modelo.php}!cargarLibros@{cargarLibros}}
+\index{cargarLibros@{cargarLibros}!modelo.php@{modelo.php}}
+\doxysubsubsection{cargarLibros()}
+{\footnotesize\ttfamily cargar\+Libros (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Retorna un array con la información de los libros.
+
+\begin{DoxyReturn}{Devuelve}
+Retorna una lista de libros. 
+\end{DoxyReturn}
+\mbox{\label{modelo_8php_a6eccd5a2b63e5730fc269320998bd34d}} 
+\index{modelo.php@{modelo.php}!cargarRol@{cargarRol}}
+\index{cargarRol@{cargarRol}!modelo.php@{modelo.php}}
+\doxysubsubsection{cargarRol()}
+{\footnotesize\ttfamily cargar\+Rol (\begin{DoxyParamCaption}\item[{}]{\$usuario }\end{DoxyParamCaption})}
+
+Carga el rol de un usuario 
+\begin{DoxyParams}[1]{Parámetros}
+String & {\em \$usuario} & argumento \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Devuelve}
+String Retorna el valor de la columna rol diferenciado por su valor de usuario 
+\end{DoxyReturn}
+\mbox{\label{modelo_8php_a09576aac36321b9fe2a549dbe7d0f0a9}} 
+\index{modelo.php@{modelo.php}!cargarUsuario@{cargarUsuario}}
+\index{cargarUsuario@{cargarUsuario}!modelo.php@{modelo.php}}
+\doxysubsubsection{cargarUsuario()}
+{\footnotesize\ttfamily cargar\+Usuario (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Carga una lista con los datos de un usuario \begin{DoxyReturn}{Devuelve}
+Array con todas la columnas de la consulta. 
+\end{DoxyReturn}
+\mbox{\label{modelo_8php_af520acc144036189ed754ef6bfab6c93}} 
+\index{modelo.php@{modelo.php}!compruebaUsuario@{compruebaUsuario}}
+\index{compruebaUsuario@{compruebaUsuario}!modelo.php@{modelo.php}}
+\doxysubsubsection{compruebaUsuario()}
+{\footnotesize\ttfamily comprueba\+Usuario (\begin{DoxyParamCaption}\item[{}]{\$usuario,  }\item[{}]{\$contrasena }\end{DoxyParamCaption})}
+
+Comprueba si el usuario y la contraseña son correctos 
+\begin{DoxyParams}{Parámetros}
+{\em \$usuario} & Argumento \\
+\hline
+{\em \$contrasena} & Argumento \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Devuelve}
+boolean Retorna true si la constraseña es igual a la introducida 
+\end{DoxyReturn}
+\mbox{\label{modelo_8php_a811c604da9f8e0ee37b39dbf5c0d1309}} 
+\index{modelo.php@{modelo.php}!existeUsuario@{existeUsuario}}
+\index{existeUsuario@{existeUsuario}!modelo.php@{modelo.php}}
+\doxysubsubsection{existeUsuario()}
+{\footnotesize\ttfamily existe\+Usuario (\begin{DoxyParamCaption}\item[{}]{\$usuario }\end{DoxyParamCaption})}
+
+Función booleana que devuelve true si el usuario ya existe. 
+\begin{DoxyParams}{Parámetros}
+{\em \$usuario,atributo} & que recibe d \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Devuelve}
+Devuelve true o false. 
+\end{DoxyReturn}
+\mbox{\label{modelo_8php_a6591b495e6cce7f8fd25bd1799ce3f60}} 
+\index{modelo.php@{modelo.php}!registrar\_Usuario@{registrar\_Usuario}}
+\index{registrar\_Usuario@{registrar\_Usuario}!modelo.php@{modelo.php}}
+\doxysubsubsection{registrar\_Usuario()}
+{\footnotesize\ttfamily registrar\+\_\+\+Usuario (\begin{DoxyParamCaption}\item[{}]{\$datos\+\_\+usuario }\end{DoxyParamCaption})}
+
+Crea un nuevo usuario 
+\begin{DoxyParams}[1]{Parámetros}
+Array & {\em \$lista\+\_\+registro} & Array con todos los datos para crear un nuevo usuario \\
+\hline
+\end{DoxyParams}
+\mbox{\label{modelo_8php_a9edd3c7d26f67a6f175e2326343999de}} 
+\index{modelo.php@{modelo.php}!set\_autor@{set\_autor}}
+\index{set\_autor@{set\_autor}!modelo.php@{modelo.php}}
+\doxysubsubsection{set\_autor()}
+{\footnotesize\ttfamily set\+\_\+autor (\begin{DoxyParamCaption}\item[{}]{\$datos\+\_\+autor }\end{DoxyParamCaption})}
+
+Introduce un autor nuevo 
+\begin{DoxyParams}[1]{Parámetros}
+Array & {\em \$datos\+\_\+autor} & Array con todos los datos para introducir un nuevo autor \\
+\hline
+\end{DoxyParams}
+\mbox{\label{modelo_8php_a7592ed08cb3098a463ac426b8153cfdb}} 
+\index{modelo.php@{modelo.php}!set\_libro@{set\_libro}}
+\index{set\_libro@{set\_libro}!modelo.php@{modelo.php}}
+\doxysubsubsection{set\_libro()}
+{\footnotesize\ttfamily set\+\_\+libro (\begin{DoxyParamCaption}\item[{}]{\$datos\+\_\+libro }\end{DoxyParamCaption})}
+
+Introduce un libro nuevo 
+\begin{DoxyParams}[1]{Parámetros}
+Array & {\em \$datos\+\_\+libro} & Array con todos los datos para crear un libro \\
+\hline
+\end{DoxyParams}
+\mbox{\label{modelo_8php_aaeffbed734a34cff68da8e986273442a}} 
+\index{modelo.php@{modelo.php}!update\_autor@{update\_autor}}
+\index{update\_autor@{update\_autor}!modelo.php@{modelo.php}}
+\doxysubsubsection{update\_autor()}
+{\footnotesize\ttfamily update\+\_\+autor (\begin{DoxyParamCaption}\item[{}]{\$lista\+\_\+modificada }\end{DoxyParamCaption})}
+
+Modifica los valores de un autor 
+\begin{DoxyParams}[1]{Parámetros}
+Array & {\em \$lista\+\_\+modificada} & Array con todos los datos para modificar un libro. \\
+\hline
+\end{DoxyParams}
+\mbox{\label{modelo_8php_a049b570194f70156e494c678f471273b}} 
+\index{modelo.php@{modelo.php}!update\_libro@{update\_libro}}
+\index{update\_libro@{update\_libro}!modelo.php@{modelo.php}}
+\doxysubsubsection{update\_libro()}
+{\footnotesize\ttfamily update\+\_\+libro (\begin{DoxyParamCaption}\item[{}]{\$lista\+\_\+modificada }\end{DoxyParamCaption})}
+
+Modifica los datos de un libro 
+\begin{DoxyParams}[1]{Parámetros}
+Array & {\em \$lista\+\_\+modificada} & Array con todos los datos para modificar el libro \\
+\hline
+\end{DoxyParams}
+\mbox{\label{modelo_8php_a69b09d186c0e5567e0586c09d3dd2eab}} 
+\index{modelo.php@{modelo.php}!update\_user@{update\_user}}
+\index{update\_user@{update\_user}!modelo.php@{modelo.php}}
+\doxysubsubsection{update\_user()}
+{\footnotesize\ttfamily update\+\_\+user (\begin{DoxyParamCaption}\item[{}]{\$lista\+\_\+modificada }\end{DoxyParamCaption})}
+
+Modifica los datos de un usuario 
+\begin{DoxyParams}[1]{Parámetros}
+Array & {\em \$lista\+\_\+modificada} & Array con todos los datos para modificar el usuario \\
+\hline
+\end{DoxyParams}
